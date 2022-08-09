@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_austria"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_poland"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_austria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/austria_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_austria"
+        app:layout_constraintStart_toStartOf="@id/ll_austria"
+        app:layout_constraintTop_toBottomOf="@id/ll_austria" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_poland"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_austria"
+        app:layout_constraintTop_toTopOf="@+id/ll_austria">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/poland_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_poland"
+        app:layout_constraintStart_toStartOf="@id/ll_poland"
+        app:layout_constraintTop_toBottomOf="@id/ll_poland" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_italy"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_colombia"
+        app:layout_constraintStart_toStartOf="@id/ll_austria"
+        app:layout_constraintTop_toBottomOf="@+id/tv_austria">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_italy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/italy_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_italy"
+        app:layout_constraintStart_toStartOf="@id/ll_italy"
+        app:layout_constraintTop_toBottomOf="@id/ll_italy" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_colombia"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_italy"
+        app:layout_constraintTop_toTopOf="@+id/ll_italy">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@android:color/holo_orange_light" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_700" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/colombia_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_colombia"
+        app:layout_constraintStart_toStartOf="@id/ll_colombia"
+        app:layout_constraintTop_toBottomOf="@id/ll_colombia" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_madagascar"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_thailand"
+        app:layout_constraintStart_toStartOf="@id/ll_austria"
+        app:layout_constraintTop_toBottomOf="@+id/tv_italy">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_madagascar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/madagascar_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_madagascar"
+        app:layout_constraintStart_toStartOf="@id/ll_madagascar"
+        app:layout_constraintTop_toBottomOf="@id/ll_madagascar" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_thailand"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_madagascar"
+        app:layout_constraintTop_toTopOf="@+id/ll_madagascar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/purple_700" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/thailand_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_thailand"
+        app:layout_constraintStart_toStartOf="@id/ll_thailand"
+        app:layout_constraintTop_toBottomOf="@id/ll_thailand" />
+
+    <FrameLayout
+        android:id="@+id/ll_dania"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@id/ll_switzerland"
+        app:layout_constraintStart_toStartOf="@id/ll_austria"
+        app:layout_constraintTop_toBottomOf="@+id/tv_madagascar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark" />
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dania_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_dania"
+        app:layout_constraintStart_toStartOf="@id/ll_dania"
+        app:layout_constraintTop_toBottomOf="@id/ll_dania" />
+
+    <FrameLayout
+        android:id="@+id/ll_switzerland"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/black_stroke"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_dania"
+        app:layout_constraintTop_toTopOf="@+id/ll_dania">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark" />
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/switzerland_title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ll_switzerland"
+        app:layout_constraintStart_toStartOf="@id/ll_switzerland"
+        app:layout_constraintTop_toBottomOf="@id/ll_switzerland" />
+
+    <Button
+        android:id="@+id/button_task_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/to_task_2_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

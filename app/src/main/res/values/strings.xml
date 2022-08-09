@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">3_homework</string>
+    <string name="austria_title">Austria</string>
+    <string name="poland_title">Poland</string>
+    <string name="italy_title">Italy</string>
+    <string name="colombia_title">Colombia</string>
+    <string name="madagascar_title">Madagascar</string>
+    <string name="thailand_title">Thailand</string>
+    <string name="dania_title">Dania</string>
+    <string name="switzerland_title">Switzerland</string>
+    <string name="to_task_2_button">To task 2</string>
+</resources>
