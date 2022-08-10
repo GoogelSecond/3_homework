@@ -9,4 +9,7 @@
     <string name="dania_title">Dania</string>
     <string name="switzerland_title">Switzerland</string>
     <string name="to_task_2_button">To task 2</string>
+    <string name="edit_text_hint">url</string>
+    <string name="image_view_content_description">Image view</string>
+    <string name="image_url">https://picsum.photos/200/300</string>
 </resources>
